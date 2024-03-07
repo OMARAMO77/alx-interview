@@ -2,6 +2,7 @@
 """pascal's triangle
 """
 
+
 def pascal_triangle(n):
     """
     Returns a list of lists of integers representing the
@@ -18,4 +19,5 @@ def pascal_triangle(n):
             elif i > 0 and j > 0:
                 line.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
         triangle.append(line)
+
     return triangle
